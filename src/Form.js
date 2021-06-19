@@ -50,10 +50,10 @@ export default function Form() {
     return (
 
         <Box bgColor="#f7f8fa" pt="10%" pb="15%" align="center">
-            <Text fontFamily="Circular Std Book" fontSize="20" fontWeight="700">Omega</Text>
+            <Text fontFamily="Oswald" fontSize="20" fontWeight="700">Omega</Text>
             <Container maxW="527" bgColor="white" align="center" mt="150" borderRadius="10">
                 <Stack>
-                    <Heading pt="15" fontFamily="Circular Std Book" fontSize="60" fontWeight="700">Sign Up</Heading>
+                    <Heading pt="15" fontFamily="Oswald" fontSize="60" fontWeight="700">Sign Up</Heading>
                     <Text fontFamily="Circular Std Book">No credit card required</Text>
                 </Stack>
                 <form onSubmit={formik.handleSubmit} >
@@ -62,12 +62,12 @@ export default function Form() {
                             {/* <FormLabel>Email Address</FormLabel> */}
                             <Input placeholder="Email" type="email" name="email" onChange={formik.handleChange} value={formik.values.email} onBlur={formik.handleBlur}/>
                             
-                            {formik.touched.email && formik.errors.email ? <Text color="red" fontFamily="Circular Std Book" align="right">{formik.errors.email}</Text> : null}
+                            {formik.touched.email && formik.errors.email ? <Text color="red" fontFamily="Oswald" align="right">{formik.errors.email}</Text> : null}
                         </FormControl>
                         <FormControl id="email">
                             {/* <FormLabel>Company Name</FormLabel> */}
                             <Input placeholder="Company Name" type="name" name='name' onChange={formik.handleChange} value={formik.values.name} onBlur={formik.handleBlur}/>
-                            {formik.touched.name && formik.errors.name ? <Text color='red' fontFamily="Circular Std Book" align="right">{formik.errors.name}</Text> : null}
+                            {formik.touched.name && formik.errors.name ? <Text color='red' fontFamily="Oswald" align="right">{formik.errors.name}</Text> : null}
                         </FormControl>
                         <FormControl id="email">
                             {/* <FormLabel>Password</FormLabel> */}
@@ -76,13 +76,13 @@ export default function Form() {
                             {formik.touched.password && formik.errors.password ? <Text color="red" fontFamily="Circular Std Book" align="right">{formik.errors.password}</Text> : null}
                         </FormControl>
 
-                        <Checkbox colorScheme="red" defaultIsChecked fontFamily="Circular Std Book"
+                        <Checkbox colorScheme="red" defaultIsChecked fontFamily="Oswald"
                             fontSize="16">I agree to the Terms & Conditions</Checkbox>
                         {/* <FormControl id="button">
                             <Input type="button" name="submit" value="Get Started" bgColor="#f04037" fontFamily="Circular Std Book"/>
                         </FormControl> */}
                         <button type="submit" className="myButton">Get Started</button>
-                        <Text fontSize="16" color="#696871" W="238" fontFamily="Circular Std Book"
+                        <Text fontSize="16" color="#696871" W="238" fontFamily="Oswald"
                         >Already have an account? Sign in</Text>
                     </Stack>
                 </form>
