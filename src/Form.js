@@ -54,7 +54,7 @@ export default function Form() {
             <Container maxW="527" bgColor="white" align="center" mt="150" borderRadius="10">
                 <Stack>
                     <Heading pt="15" fontFamily="Oswald" fontSize="60" fontWeight="700">Sign Up</Heading>
-                    <Text fontFamily="Circular Std Book">No credit card required</Text>
+                    <Text fontFamily="Oswald">No credit card required</Text>
                 </Stack>
                 <form onSubmit={formik.handleSubmit} >
                     <Stack spacing={4} mt="50">
@@ -73,7 +73,7 @@ export default function Form() {
                             {/* <FormLabel>Password</FormLabel> */}
                             <Input placeholder="Password" type="password" name='password' onChange={formik.handleChange} value={formik.values.password} onBlur={formik.handleBlur}/>
                             
-                            {formik.touched.password && formik.errors.password ? <Text color="red" fontFamily="Circular Std Book" align="right">{formik.errors.password}</Text> : null}
+                            {formik.touched.password && formik.errors.password ? <Text color="red" fontFamily="Oswald" align="right">{formik.errors.password}</Text> : null}
                         </FormControl>
 
                         <Checkbox colorScheme="red" defaultIsChecked fontFamily="Oswald"
