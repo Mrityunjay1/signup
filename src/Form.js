@@ -36,9 +36,10 @@ export default function Form() {
 
             if(!values.password){
                 errors.password='Required'
-            }else if(!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(values.password)){
-                errors.password="Minimum eight characters, at least one letter and one number"
-            }
+             }
+            //else if(!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(values.password)){
+            //     errors.password="Minimum eight characters, at least one letter and one number"
+            // }
 
 
 
